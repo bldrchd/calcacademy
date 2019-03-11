@@ -1,0 +1,10 @@
+com\sap\calcacademy\calculator\exceptions\CalculationValidationException.class
+com\sap\calcacademy\calculator\service\Expression.class
+com\sap\calcacademy\calculator\exceptions\CalculationException.class
+com\sap\calcacademy\calculator\InputValidationAndTransformation.class
+com\sap\calcacademy\calculator\service\Result.class
+com\sap\calcacademy\calculator\CalculationAlgo.class
+com\sap\calcacademy\calculator\exceptions\NoArgumentsException.class
+com\sap\calcacademy\calculator\service\CalculatorService.class
+com\sap\App.class
+com\sap\calcacademy\calculator\Calculator.class
