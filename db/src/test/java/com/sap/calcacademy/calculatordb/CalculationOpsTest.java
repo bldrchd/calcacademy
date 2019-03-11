@@ -16,7 +16,8 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import com.sap.calcacademy.calculatordb.model.Calculation;
+import com.sap.calcacademy.calculator.db.CalculationOps;
+import com.sap.calcacademy.calculator.db.model.Calculation;
 
 public class CalculationOpsTest {
     @Mock

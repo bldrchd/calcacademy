@@ -1,6 +1,0 @@
-com\sap\calcacademy\calculatordb\exceptions\ErrorMessage.class
-com\sap\calcacademy\calculatordb\MyQuery.class
-com\sap\calcacademy\calculatordb\CalculationOps.class
-com\sap\calcacademy\calculatordb\DBConnection.class
-com\sap\calcacademy\calculatordb\exceptions\DBFailureException.class
-com\sap\calcacademy\calculatordb\model\Calculation.class

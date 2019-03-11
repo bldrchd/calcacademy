@@ -29,5 +29,13 @@ public class Calculator {
         return Double.valueOf(ca.startCalculating(validatedString));
 
     }
+    public boolean validate(String inputString) throws CalculationValidationException {
+        InputValidationAndTransformation ivat = new InputValidationAndTransformation();
+        String validatedString = (ivat.validateAndTrimInput(inputString));
+        if (!validatedString.isEmpty()) {
+            return true;
+        }
+        return false;
+    }
 
 }

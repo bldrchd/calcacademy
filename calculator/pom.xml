@@ -51,19 +51,25 @@
 			<artifactId>jersey-bundle</artifactId>
 			<version>1.19.4</version>
 		</dependency>
-		<!-- <dependency> <groupId>org.apache.cxf</groupId> <artifactId>cxf-rt-rs-security-cors</artifactId> 
-			<version>2.6.1</version> </dependency> <dependency> <groupId>org.atmosphere</groupId> 
-			<artifactId>atmosphere-jersey</artifactId> <version>0.6.3</version> </dependency> -->
+		<dependency>
+			<groupId>javax.ws.rs</groupId>
+			<artifactId>javax.ws.rs-api</artifactId>
+			<version>2.1</version>
+		</dependency>
 
-		<!-- the rest is prev. -->
-		<!-- <dependency> <groupId>javax.servlet</groupId> <artifactId>javax.servlet-api</artifactId> 
-			<version>3.1.0</version> </dependency> <dependency> <groupId>org.json</groupId> 
-			<artifactId>json</artifactId> <version>20180130</version> </dependency> <dependency> 
-			<groupId>javax.ws.rs</groupId> <artifactId>javax.ws.rs-api</artifactId> <version>2.1</version> 
-			</dependency> <dependency> <groupId>org.glassfish.jersey.containers</groupId> 
-			<artifactId>jersey-container-servlet</artifactId> <version>2.20</version> 
-			</dependency> <dependency> <groupId>org.glassfish.jersey.core</groupId> <artifactId>jersey-server</artifactId> 
-			<version>2.20</version> </dependency> -->
+			<!-- <dependency> <groupId>org.apache.cxf</groupId> <artifactId>cxf-rt-rs-security-cors</artifactId> 
+				<version>2.6.1</version> </dependency> <dependency> <groupId>org.atmosphere</groupId> 
+				<artifactId>atmosphere-jersey</artifactId> <version>0.6.3</version> </dependency> -->
+
+			<!-- the rest is prev. -->
+			<!-- <dependency> <groupId>javax.servlet</groupId> <artifactId>javax.servlet-api</artifactId> 
+				<version>3.1.0</version> </dependency> <dependency> <groupId>org.json</groupId> 
+				<artifactId>json</artifactId> <version>20180130</version> </dependency> <dependency> 
+				<groupId>javax.ws.rs</groupId> <artifactId>javax.ws.rs-api</artifactId> <version>2.1</version> 
+				</dependency> <dependency> <groupId>org.glassfish.jersey.containers</groupId> 
+				<artifactId>jersey-container-servlet</artifactId> <version>2.20</version> 
+				</dependency> <dependency> <groupId>org.glassfish.jersey.core</groupId> <artifactId>jersey-server</artifactId> 
+				<version>2.20</version> </dependency> -->
 	</dependencies>
 
 	<build>

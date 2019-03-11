@@ -1,6 +1,6 @@
-package com.sap.calcacademy.calculator.exceptions;
+package com.sap.calcacademy.calculator.db.exceptions;
 
-public class CalculationException extends IllegalArgumentException {
+public class CalculationException extends Exception {
     /**
      * Default serialization ID
      */
