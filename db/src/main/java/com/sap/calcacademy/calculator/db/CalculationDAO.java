@@ -5,7 +5,6 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
-import com.sap.calcacademy.calculator.db.*;
 import com.sap.calcacademy.calculator.db.model.Calculation;
 
 public class CalculationDAO {
@@ -51,11 +50,6 @@ public class CalculationDAO {
 		em.getTransaction().commit();
 	}
 
-	public List<Calculation> getNotCalculated() {
-		Query q = em.createNamedQuery("Calculation.getUncalculated");
-		List<Calculation> all = q.getResultList();
-		return all;
-	}
 
 	public Calculation getById(int id) {
 		Calculation calculation = em.find(Calculation.class, id);

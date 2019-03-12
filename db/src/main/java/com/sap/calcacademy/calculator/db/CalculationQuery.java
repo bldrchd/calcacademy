@@ -16,7 +16,7 @@ public class CalculationQuery implements IQuery {
         this.dao = new CalculationDAO(connection.getEntityManager());
     }
 
-    CalculationQuery(CalculationDAO dao) {
+    public CalculationQuery(CalculationDAO dao) {
         this.dao = dao;
     }
 
@@ -37,35 +37,48 @@ public class CalculationQuery implements IQuery {
             throw new DBFailureException(ErrorMessage.CONNECTION_FAILURE, e);
         }
     }
+    public void insertCalculation(String expression, String result) throws DBFailureException {
+        try {
+            dao.insert(expression, result);
+        } catch (Exception e) {
+            throw new DBFailureException(ErrorMessage.INSERT_ERROR, e);
+        }
+    }
 
 
     @Override
     public void deleteCalculationById(int id) throws DBFailureException {
-        // TODO Auto-generated method stub
+        try {
+            dao.deleteById(id);
+        } catch (Exception e) {
+            throw new DBFailureException(ErrorMessage.DELETE_ID_ERROR, e);
+        }
         
     }
 
     @Override
     public void deleteAll() throws DBFailureException {
-        // TODO Auto-generated method stub
+        try {
+            dao.deleteAll();
+        } catch (Exception e) {
+            throw new DBFailureException(ErrorMessage.DELETE_ERROR, e);
+        }
         
     }
 
-    @Override
-    public List<Calculation> getNotCalculatedExpressions() throws DBFailureException {
-        // TODO Auto-generated method stub
-        return null;
-    }
 
     @Override
-    public void setResultToExpression(int id, String string) throws DBFailureException {
-        // TODO Auto-generated method stub
+    public void setResultToExpression(int expressionID, String result) throws DBFailureException {
+        try {
+            dao.setResult(expressionID, result);
+        } catch (Exception e) {
+            throw new DBFailureException(ErrorMessage.SET_ERROR, e);
+        }
         
     }
 
     @Override
     public Calculation getCalculationById(int id) {
-        // TODO Auto-generated method stub
-        return null;
+        return dao.getById(id);
     }
 }

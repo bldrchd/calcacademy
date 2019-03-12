@@ -9,7 +9,10 @@ import javax.persistence.NamedQuery;
 
 
 @Entity
-    @NamedQueries({ @NamedQuery(name = "Calculation.findAll", query = "SELECT c FROM Calculation c")})
+    @NamedQueries({ @NamedQuery(name = "Calculation.findAll", query = "SELECT c FROM Calculation c"),
+        @NamedQuery(name = "Calculation.deleteAll", query = "DELETE FROM Calculation"),
+        @NamedQuery(name = "Calculation.updateResultByExpression", query = "UPDATE Calculation c SET c.result = :result WHERE c.expression = :expression"),
+        @NamedQuery(name = "Calculation.updateResultById", query = "UPDATE Calculation c SET c.result = :result WHERE c.id = :id")})
     
     public class Calculation {
         @Id

@@ -46,13 +46,6 @@ public interface IQuery {
     
     /**
      * 
-     * @return list of all calculations which have result null
-     * @throws DBFailureException if can't connect to the db
-     */
-    List<Calculation> getNotCalculatedExpressions() throws DBFailureException;
-    
-    /**
-     * 
      * @param id id of expression which result will be set
      * @param string to be set
      * @throws DBFailureException if can't connect to the db

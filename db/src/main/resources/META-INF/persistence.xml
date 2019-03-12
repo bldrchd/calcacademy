@@ -4,14 +4,17 @@
 	version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
 	<persistence-unit name="db" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-		<class>com.db.model.Calculation</class>
+		<class>com.sap.calcacademy.calculator.db.model.Calculation</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
 			<property name="javax.persistence.jdbc.url"
-				value="\databases\db;create=true" />
+				value="C:\Users\i311648\db-derby-10.14.2.0-bin;create=true" />
 			<property name="javax.persistence.jdbc.user" value="user" />
 			<property name="javax.persistence.jdbc.password" value="password" /> 
 			
+			<property name="eclipselink.ddl-generation" value="create-tables" />
+			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
+			<!--<property name="javax.persistence.jdbc.url" value="jdbc:...:...:.../"   -->
 		</properties>
 	</persistence-unit>
 </persistence>
