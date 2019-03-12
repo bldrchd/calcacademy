@@ -19,7 +19,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import com.sap.calcacademy.calculator.db.CalculationDAO;
-import com.sap.calcacademy.calculator.db.model.*;
+import com.sap.calcacademy.calculator.db.model.Calculation;
 
 public class CalculationDAOTest {
 

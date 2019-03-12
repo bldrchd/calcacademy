@@ -7,6 +7,8 @@ import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 
+import com.sap.calcacademy.calculator.db.model.Calculation;
+
 
 @Entity
     @NamedQueries({ @NamedQuery(name = "Calculation.findAll", query = "SELECT c FROM Calculation c"),

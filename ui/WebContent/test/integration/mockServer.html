@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		<title>Calculator Test Page</title>		
+		<script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m, sap.ui.layout, sap.ui.core"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-bindingSyntax="complex"
+				data-sap-ui-compatVersion="edge"   
+				data-sap-ui-preload="async"
+				data-sap-ui-resourceroots='{"ui":"../../"}' >
+		</script>
+		
+		<script>
+				sap.ui.getCore().attachInit(function () {
+					sap.ui.require([
+						"sap/ui/core/ComponentContainer",
+						"sap/ui/core/util/MockServer"
+						], function(MockServer, ComponentContainer) {
+						
+						var oCallForCalculation = {
+								method: "POST",
+								path: "calculate/result",
+								response: function(oXhr, sUrlParams) {
+									oXhr.respondJSON(200, {"Location": "calculate/result"}, JSON.stringify(
+											{
+												"result": "4.25",
+												"errorMessage" : ""
+											}
+									));
+									return true;
+								}
+						}
+						
+						var oMockServer = new sap.ui.core.util.MockServer({
+							rootUri: "../api/",
+							requests: [
+								 oCallForCalculation
+							]
+						});
+						
+						oMockServer.start();
+						
+						new sap.ui.core.ComponentContainer({
+							name : "ui"
+						}).placeAt("content");
+						
+					})	
+				});
+		</script>
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

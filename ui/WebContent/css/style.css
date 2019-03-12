@@ -1,0 +1,5 @@
+/*custom css class for the Text control*/
+.errorText {
+	color: #FF0000;
+	font-weight: bold;
+}

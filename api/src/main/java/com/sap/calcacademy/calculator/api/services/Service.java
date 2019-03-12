@@ -24,11 +24,10 @@ import com.sap.calcacademy.calculator.api.domain.models.ErrorDTO;
 import com.sap.calcacademy.calculator.api.domain.models.ExpressionDTO;
 import com.sap.calcacademy.calculator.api.domain.models.IdDTO;
 import com.sap.calcacademy.calculator.api.domain.models.StatusDTO;
+import com.sap.calcacademy.calculator.db.exceptions.*;
+import com.sap.calcacademy.calculator.db.model.*;
 import com.sap.calcacademy.calculator.db.CalculationQuery;
-import com.sap.calcacademy.calculator.db.api.IQuery;
-import com.sap.calcacademy.calculator.db.exceptions.DBFailureException;
-import com.sap.calcacademy.calculator.db.model.Calculation;
-
+import com.sap.calcacademy.calculator.db.api.*;
 
 @Singleton
 @Path("/calculate")

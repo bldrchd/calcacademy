@@ -1,11 +1,13 @@
 package com.sap.calcacademy.calculator.db;
 
+
 import java.util.List;
 
 import com.sap.calcacademy.calculator.db.api.IQuery;
 import com.sap.calcacademy.calculator.db.exceptions.DBFailureException;
 import com.sap.calcacademy.calculator.db.exceptions.ErrorMessage;
 import com.sap.calcacademy.calculator.db.model.Calculation;
+
 
 public class CalculationQuery implements IQuery {
 

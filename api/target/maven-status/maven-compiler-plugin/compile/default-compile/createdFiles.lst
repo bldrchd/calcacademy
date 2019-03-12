@@ -1,0 +1,9 @@
+com\sap\calcacademy\calculator\api\domain\models\ErrorDTO.class
+com\sap\calcacademy\calculator\api\services\Service$1.class
+com\sap\calcacademy\calculator\api\services\Service.class
+com\sap\calcacademy\calculator\api\domain\models\InputDTO.class
+com\sap\calcacademy\calculator\api\domain\models\StatusDTO.class
+com\sap\calcacademy\calculator\api\domain\models\ExpressionDTO.class
+com\sap\calcacademy\calculator\api\ServiceApplication.class
+com\sap\calcacademy\calculator\api\domain\models\IdDTO.class
+com\sap\calcacademy\calculator\api\domain\models\ResultDTO.class

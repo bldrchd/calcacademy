@@ -1,5 +1,7 @@
 package com.sap.calcacademy.calculator.db.exceptions;
 
+import com.sap.calcacademy.calculator.db.exceptions.ErrorMessage;
+
 /**
  * 
  * The DBFailureException wraps standard Java exceptions which are thrown 

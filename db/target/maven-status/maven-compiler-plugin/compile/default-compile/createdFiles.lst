@@ -1,0 +1,8 @@
+com\sap\calcacademy\calculator\db\CalculationQuery.class
+com\sap\calcacademy\calculator\db\exceptions\CalculationException.class
+com\sap\calcacademy\calculator\db\exceptions\ErrorMessage.class
+com\sap\calcacademy\calculator\db\exceptions\DBFailureException.class
+com\sap\calcacademy\calculator\db\DBConnection.class
+com\sap\calcacademy\calculator\db\api\IQuery.class
+com\sap\calcacademy\calculator\db\model\Calculation.class
+com\sap\calcacademy\calculator\db\CalculationDAO.class

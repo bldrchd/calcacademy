@@ -1,23 +1,27 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
-
-<script id="sap-ui-bootstrap"
-	src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
-	data-sap-ui-theme="sap_bluecrystal" data-sap-ui-libs="sap.m"
-	data-sap-ui-resourceroots='{
-			"com.sap.calc": "./"
-		}'
-	data-sap-ui-compatVersion="edge" data-sap-ui-async="true">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		<script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m, sap.ui.layout, sap.ui.core"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-bindingSyntax="complex"
+				data-sap-ui-compatVersion="edge"   
+				data-sap-ui-preload="async"
+				data-sap-ui-resourceroots='{"ui":"./"}' >
+		</script>
+		<script>
+				sap.ui.getCore().attachInit(function () {
+					new sap.ui.core.ComponentContainer({
+						name : "ui"
+					}).placeAt("content");
+				});
+		</script>
+	</head>
 	
-</script>
-<script src="index.js"></script>
-</head>
-<body class="sapUiBody" role="application">
-	<div data-sap-ui-component data-name="com.sap.calc.calculatorui"
-		data-id="container" data-settings='{"id" : "odatav4"}'></div>
-	<div id="content"></div>
-</body>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
 </html>

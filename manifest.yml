@@ -1,0 +1,7 @@
+---
+applications:
+- name: calcacademy
+  memory: 512M
+  instances: 1
+  random-route: false 
+  host: calcacademy 
