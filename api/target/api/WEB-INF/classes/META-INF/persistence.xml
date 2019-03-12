@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+	<persistence-unit name="db" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>com.sap.calcacademy.calculator.db.model.Calculation</class>
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:derby:C:\Users\i311648\db-derby-10.14.2.0-bin\databases\calcDB;create=true" />
+			<property name="javax.persistence.jdbc.user" value="user" />
+			<property name="javax.persistence.jdbc.password" value="password" /> 
+			
+			<property name="eclipselink.ddl-generation" value="create-tables" />
+			<property name="eclipselink.ddl-generation.output-mode" value="database" />
+			<!--
+			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:...:...:.../"   
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:derby://localhost:1527/my;create=true;user=user;password=password" />
+				<property name="eclipselink.logging.level" value="SEVERE" />
+			<property name="javax.persistence.jdbc.user" value="USER1" />
+			<property name="javax.persistence.jdbc.password" value="MYcalculator01" />
+			 -->
+		</properties>
+	</persistence-unit>
+</persistence>

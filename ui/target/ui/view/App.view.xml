@@ -1,0 +1,45 @@
+<mvc:View displayBlock="true" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="ui.controller.App" xmlns:f="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Calculator" titleLevel="H2">
+				<content>
+					<Panel class="sapUiResponsiveMargin" width="auto">
+						<f:SimpleForm id="simpleForm" editable="true" class="editableForm">
+							<f:content>
+
+								<l:VerticalLayout>
+									<FlexBox alignItems="Center" justifyContent="Center">
+										<items>
+											<Input id="input" required="true" placeholder="Expression"
+												submit="onPress" />
+											<Button id="input-submit" text="Submit" press="onPress();" />
+										</items>
+									</FlexBox>
+									
+									<FlexBox alignItems="Center" justifyContent="Center">
+										<Text id="error" class="errorText" text="{InputPanel>/errorMessage}" />
+									</FlexBox>
+
+								</l:VerticalLayout>
+
+							</f:content>
+						</f:SimpleForm>
+					</Panel>
+					<Panel class="sapUiResponsiveMargin" width="auto">
+						<content>
+							<FlexBox alignItems="Center" justifyContent="Center">
+								<items>
+									<mvc:XMLView id="table-view" viewName="ui.view.Table" />
+								</items>
+							</FlexBox>
+						</content>
+					</Panel>
+				</content>
+			</Page>
+
+		</pages>
+	</App>
+
+</mvc:View> 

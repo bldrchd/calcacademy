@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.sap.calcacademy.calculator.test.CalculatorServiceTest" time="0.022" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.sap.calcacademy.calculator.test.CalculatorServiceTest" time="0.023" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -34,7 +34,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\i311648\AppData\Local\Temp\surefire5897260884091505294\surefirebooter4736121637881483724.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\i311648\AppData\Local\Temp\surefire4541442822848415676\surefirebooter8271549531313028317.jar"/>
     <property name="sun.boot.class.path" value="C:\SAPJVM\sapjvm_8\jre\lib\resources.jar;C:\SAPJVM\sapjvm_8\jre\lib\rt.jar;C:\SAPJVM\sapjvm_8\jre\lib\sunrsasign.jar;C:\SAPJVM\sapjvm_8\jre\lib\jsse.jar;C:\SAPJVM\sapjvm_8\jre\lib\jce.jar;C:\SAPJVM\sapjvm_8\jre\lib\charsets.jar;C:\SAPJVM\sapjvm_8\jre\lib\jfr.jar;C:\SAPJVM\sapjvm_8\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>

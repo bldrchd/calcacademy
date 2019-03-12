@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="calcacademy.db.test.CalculationDAOTest" time="0.26" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="calcacademy.db.test.CalculationDAOTest" time="0.237" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -34,7 +34,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\i311648\AppData\Local\Temp\surefire7887499941321220722\surefirebooter2584304578226373699.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\i311648\AppData\Local\Temp\surefire4812874987299303354\surefirebooter2136572571384734072.jar"/>
     <property name="sun.boot.class.path" value="C:\SAPJVM\sapjvm_8\jre\lib\resources.jar;C:\SAPJVM\sapjvm_8\jre\lib\rt.jar;C:\SAPJVM\sapjvm_8\jre\lib\sunrsasign.jar;C:\SAPJVM\sapjvm_8\jre\lib\jsse.jar;C:\SAPJVM\sapjvm_8\jre\lib\jce.jar;C:\SAPJVM\sapjvm_8\jre\lib\charsets.jar;C:\SAPJVM\sapjvm_8\jre\lib\jfr.jar;C:\SAPJVM\sapjvm_8\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -66,12 +66,12 @@
     <property name="java.class.version" value="52.0"/>
     <property name="com.sap.vm.compressedoops" value="true"/>
   </properties>
-  <testcase name="testInsertWrappedCalculation" classname="calcacademy.db.test.CalculationDAOTest" time="0.184"/>
+  <testcase name="testInsertWrappedCalculation" classname="calcacademy.db.test.CalculationDAOTest" time="0.167"/>
   <testcase name="testGetById" classname="calcacademy.db.test.CalculationDAOTest" time="0.002"/>
   <testcase name="testDeleteAll" classname="calcacademy.db.test.CalculationDAOTest" time="0.001"/>
-  <testcase name="testSetResultByExpression" classname="calcacademy.db.test.CalculationDAOTest" time="0.002"/>
-  <testcase name="testDeleteById" classname="calcacademy.db.test.CalculationDAOTest" time="0.003"/>
-  <testcase name="testGetAll" classname="calcacademy.db.test.CalculationDAOTest" time="0.001"/>
+  <testcase name="testSetResultByExpression" classname="calcacademy.db.test.CalculationDAOTest" time="0.001"/>
+  <testcase name="testDeleteById" classname="calcacademy.db.test.CalculationDAOTest" time="0.001"/>
+  <testcase name="testGetAll" classname="calcacademy.db.test.CalculationDAOTest" time="0"/>
   <testcase name="testInsert" classname="calcacademy.db.test.CalculationDAOTest" time="0.001"/>
-  <testcase name="testSetResultById" classname="calcacademy.db.test.CalculationDAOTest" time="0.002"/>
+  <testcase name="testSetResultById" classname="calcacademy.db.test.CalculationDAOTest" time="0"/>
 </testsuite>

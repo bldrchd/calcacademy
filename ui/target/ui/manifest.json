@@ -1,0 +1,73 @@
+{
+	"_version": "1.3.0",
+	"sap.app": {
+		"_version": "1.3.0",
+		"id": "ui",
+		"type": "application",
+		"title": "Calculator",
+		"description": "Calculator",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.3.0",
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_bluecrystal"
+		]
+	},
+	"sap.ui5": {
+		"_version": "1.2.0",
+		"rootView": {
+			"viewName": "ui.view.App",
+			"type": "XML",
+			"id": "app"
+		},
+		"autoPrefixId": true,
+		"dependencies": {
+			"minUI5Version": "1.34",
+			"libs": {
+				"sap.ui.core": {
+					"minVersion": "1.34.0"
+				},
+				"sap.m": {
+					"minVersion": "1.34.0"
+				},
+				"sap.ui.layout": {
+					"minVersion": "1.34.0"
+				}
+			}
+		},
+		"models": {
+			"InputPanel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"url": "model/InputPanel.json"
+			},
+			"CalcHistory" : {
+				"type": "sap.ui.model.json.JSONModel",
+				"url": "model/CalcHistory.json"
+			},
+			"Id" : {
+				"type": "sap.ui.model.json.JSONModel",
+				"url": "model/Id.json"
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		}
+	}
+}

@@ -1,0 +1,31 @@
+<mvc:View id="table-view" displayBlock="true" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="ui.controller.Table"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Table id="table" headerText="History" growing="true"
+		growingThreshold="10" noDataText="No history available"
+		enableBusyIndicator="true" items="{CalcHistory>/}">
+		<columns>
+			<Column>
+				<Label text="Expression" />
+			</Column>
+			<Column>
+				<Label text="Result" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem id="defaultItem">
+				<cells>
+					<Text text="{CalcHistory>expression}" />
+					<Text text="{CalcHistory>result}" />
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+	
+	<Bar>
+		<contentRight>
+			<Button id="clear" text="Delete history" press="clearTable();" />
+		</contentRight>
+	</Bar>
+	
+</mvc:View>
