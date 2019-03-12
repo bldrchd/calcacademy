@@ -8,13 +8,21 @@
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
 			<property name="javax.persistence.jdbc.url"
-				value="C:\Users\i311648\db-derby-10.14.2.0-bin;create=true" />
+				value="jdbc:derby:C:\Users\i311648\db-derby-10.14.2.0-bin\databases\calcDB;create=true" />
 			<property name="javax.persistence.jdbc.user" value="user" />
 			<property name="javax.persistence.jdbc.password" value="password" /> 
 			
 			<property name="eclipselink.ddl-generation" value="create-tables" />
+			<property name="eclipselink.ddl-generation.output-mode" value="database" />
+			<!--
 			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
-			<!--<property name="javax.persistence.jdbc.url" value="jdbc:...:...:.../"   -->
+			<property name="javax.persistence.jdbc.url" value="jdbc:...:...:.../"   
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:derby://localhost:1527/my;create=true;user=user;password=password" />
+				<property name="eclipselink.logging.level" value="SEVERE" />
+			<property name="javax.persistence.jdbc.user" value="USER1" />
+			<property name="javax.persistence.jdbc.password" value="MYcalculator01" />
+			 -->
 		</properties>
 	</persistence-unit>
 </persistence>

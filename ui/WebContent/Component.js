@@ -3,7 +3,7 @@ sap.ui.define([
 ], function (UIComponent) {
 	"use strict";
 
-	return UIComponent.extend("web-calculator.Component", {
+	return UIComponent.extend("ui.Component", {
 
 		metadata : {
 			manifest: "json"

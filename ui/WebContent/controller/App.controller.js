@@ -10,7 +10,8 @@ sap.ui.define([ "sap/ui/core/mvc/Controller",
 			var expression = view.byId("input").getValue();
 			$.ajax({
 				type: "POST", 
-				url: '/api/calculate/result',
+				url: 'http://localhost:8081/com.sap.calcacademy.calculator/results/',
+				//url: '/api/calculate/result',
 				data: JSON.stringify({input: expression}),
 				success: function(data) {
 					oController.addIdToArray(data);

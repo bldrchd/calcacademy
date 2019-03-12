@@ -13,6 +13,7 @@
 	<version>0.0.1</version>
 
 	<name>ui</name>
+	<packaging>war</packaging>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
@@ -32,6 +33,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>ui</finalName>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
 				defaults (may be moved to parent pom) -->
 			<plugins>
@@ -61,7 +63,7 @@
 					<artifactId>maven-war-plugin</artifactId>
 					<version>2.4</version>
 					<configuration>
-						<failOnMissingWebXml>false</failOnMissingWebXml>
+						<warSourceDirectory>WebContent</warSourceDirectory>
 					</configuration>
 				</plugin>
 				<plugin>

@@ -1,9 +1,9 @@
 <mvc:View displayBlock="true" xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m" controllerName="web-calculator.controller.App" xmlns:f="sap.ui.layout.form"
+	xmlns="sap.m" controllerName="ui.controller.App" xmlns:f="sap.ui.layout.form"
 	xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml">
 	<App>
 		<pages>
-			<Page title="Extraordinary Calculator" titleLevel="H2">
+			<Page title="Calculator" titleLevel="H2">
 				<content>
 					<Panel class="sapUiResponsiveMargin" width="auto">
 						<f:SimpleForm id="simpleForm" editable="true" class="editableForm">
